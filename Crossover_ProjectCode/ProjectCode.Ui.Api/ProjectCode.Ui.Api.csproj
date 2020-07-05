@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectCode.Application.Service\ProjectCode.Application.Service.csproj" />
+    <ProjectReference Include="..\ProjectCode.Domain.Interfaces\ProjectCode.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\ProjectCode.Domain.Model\ProjectCode.Domain.Model.csproj" />
+    <ProjectReference Include="..\ProjectCode.Infraestructure.Mapper\ProjectCode.Infraestructure.csproj" />
+    <ProjectReference Include="..\ProjectCode.Repository\ProjectCode.Infraestructure.Repository.csproj" />
+  </ItemGroup>
+
+
+</Project>
