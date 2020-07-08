@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
-using System.Runtime.Serialization;
 namespace ProjectCode.Application.Service.Exceptions
 {
     [Serializable]

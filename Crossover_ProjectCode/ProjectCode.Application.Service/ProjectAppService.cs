@@ -25,7 +25,7 @@ namespace ProjectCode.Application.Service
 
         public async Task<ProjectModel> Create(string projectRaw)
         {
-            ProjectModel project = null;
+            ProjectModel project;
             try
             {
                 project = JsonConvert.DeserializeObject<ProjectModel>(projectRaw);

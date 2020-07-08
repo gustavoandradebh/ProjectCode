@@ -1,17 +1,11 @@
 ﻿using FluentAssertions;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Moq;
 using Newtonsoft.Json;
 using ProjectCode.Application.Service.Exceptions;
-using ProjectCode.Domain.DataTransferObject;
 using ProjectCode.Domain.Model;
 using ProjectCode.Infraestructure.Repository;
 using ProjectCode.Tests.Config;
-using ProjectCode.Tests.Shared;
 using System;
-using System.Net;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace ProjectCode.Tests.Fixtures

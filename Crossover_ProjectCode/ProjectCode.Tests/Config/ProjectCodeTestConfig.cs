@@ -8,8 +8,6 @@ using ProjectCode.Infraestructure.Mapper;
 using ProjectCode.Infraestructure.Mapper.Mapper;
 using ProjectCode.Infraestructure.Repository;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ProjectCode.Tests.Config
 {

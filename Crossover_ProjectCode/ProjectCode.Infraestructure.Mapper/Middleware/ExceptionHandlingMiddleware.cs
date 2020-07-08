@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 using ProjectCode.Application.Service.Exceptions;
 using System;
 using System.Net;
@@ -71,9 +69,11 @@ namespace ProjectCode.Infraestructure.Middleware
     {
         public virtual ResponseData GetResponseData(Exception ex)
         {
-            var responseData = new ResponseData();
-            responseData.StatusCode = (int)HttpStatusCode.BadRequest;
-            responseData.ExceptionMessage = "Bad Request";
+            var responseData = new ResponseData
+            {
+                StatusCode = (int)HttpStatusCode.BadRequest,
+                ExceptionMessage = "Bad Request"
+            };
             return responseData;
         }
     }

@@ -8,7 +8,6 @@ using ProjectCode.Infraestructure.Repository;
 using ProjectCode.Tests.Config;
 using ProjectCode.Tests.Shared;
 using System;
-using System.Diagnostics.CodeAnalysis;
 using System.Net;
 using System.Threading.Tasks;
 using Xunit;
