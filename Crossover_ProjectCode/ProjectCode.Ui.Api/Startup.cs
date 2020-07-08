@@ -33,7 +33,17 @@ namespace ProjectCode.Ui.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors();
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("AllowAll", p =>
+                {
+                    p
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                });
+            })
+            .AddHttpClient();
 
             services.AddDbContext<ApiContext>(opt =>
                opt.UseInMemoryDatabase("ProjectCode"));
