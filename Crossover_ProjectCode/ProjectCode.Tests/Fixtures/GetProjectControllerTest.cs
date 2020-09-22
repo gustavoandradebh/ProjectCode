@@ -1,4 +1,6 @@
-﻿using FluentAssertions;
+﻿using System;
+using System.Threading.Tasks;
+using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Moq;
@@ -8,9 +10,6 @@ using ProjectCode.Domain.Interfaces;
 using ProjectCode.Infraestructure.Repository;
 using ProjectCode.Tests.Config;
 using ProjectCode.Ui.Api.Controllers;
-using System;
-using System.Diagnostics.CodeAnalysis;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace ProjectCode.Tests.Fixtures
